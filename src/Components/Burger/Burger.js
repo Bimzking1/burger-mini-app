@@ -8,7 +8,8 @@ import Lettuce from './Lettuce';
 const Burger = () => {
 
     // const ingredients = ['patty', 'lettuce', 'bun', 'tomato', 'cheese'];
-    const ingredients = ['patty', 'patty', 'patty', 'patty', 'patty'];
+    // const ingredients = ['patty', 'patty', 'patty', 'patty', 'patty'];
+    const ingredients = ['patty', 'cheese', 'lettuce', 'tomato', 'patty', 'bun', 'patty', 'cheese', 'lettuce', 'tomato', 'patty'];
 
     // Urutan burger mengikuti index dari array ingredients diatas
 
