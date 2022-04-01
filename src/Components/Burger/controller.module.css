@@ -6,7 +6,6 @@
     margin: 20px 16px;
     overflow-y: auto;
     height:300px;
-    background-color: orange;
 }
 .button_container {
     display: flex;
