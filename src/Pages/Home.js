@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import style from './home.module.css'
 // import Layout from '../Layouts/Layout'
 
 const Home = () => {
@@ -10,7 +10,10 @@ const Home = () => {
     // </Layout>
 
     // Route cara 2: Layout diletakan pada App.js
-      <div>Welcome to Burger Maker</div>
+      // <div>Welcome to Burger Maker</div>
+    <div className={style.home_container}>
+      <h1>Welcome to Burger Maker</h1>
+    </div>
   )
 }
 

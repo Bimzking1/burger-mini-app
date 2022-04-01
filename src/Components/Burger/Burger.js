@@ -1,22 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Bun from './Bun';
 import Tomato from './Tomato';
 import Patty from './Patty';
 import Cheese from './Cheese';
 import Lettuce from './Lettuce';
+import style from './burger.module.css'
 
-const Burger = () => {
+const Burger = (props) => {
 
     // const ingredients = ['patty', 'lettuce', 'bun', 'tomato', 'cheese'];
     // const ingredients = ['patty', 'patty', 'patty', 'patty', 'patty'];
-    const ingredients = ['patty', 'cheese', 'lettuce', 'tomato', 'patty', 'bun', 'patty', 'cheese', 'lettuce', 'tomato', 'patty'];
+    // const ingredients = ['patty', 'cheese', 'lettuce', 'tomato', 'patty', 'bun', 'patty', 'cheese', 'lettuce', 'tomato', 'patty'];
 
     // Urutan burger mengikuti index dari array ingredients diatas
 
     return (
-        <>
+        <div className={style.burger}>
             <Bun type="top"/>   {/* type adalah props dan top adalah valuenya */}
-            {ingredients.map( (item,index) => {
+            {props.ingredients.map( (item,index) => {
                 switch (item) {
                     case 'patty':
                         return <Patty key={index}/>
@@ -33,7 +34,7 @@ const Burger = () => {
                 }
             })}
             <Bun/>
-        </>
+        </div>
     )
 }
 
