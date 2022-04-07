@@ -4,3 +4,5 @@
 2. masuk ke directory project
 3. npm install
 4. npm start
+
+- Netlify: https://bimo-burger-mini-app.netlify.app/
